@@ -8,7 +8,7 @@ pipeline {
          stage('variables') {
             steps {
                script {
-                   echo $GIT_BRANCH
+                   echo "Hello world" > a.txt
                  }
             }
         }
