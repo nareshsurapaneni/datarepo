@@ -8,7 +8,7 @@ pipeline {
          stage('variables') {
             steps {
                script {
-                   echo "Hello world" > a.txt
+                   sh 'echo "Hello world" > a.txt'
                  }
             }
         }
