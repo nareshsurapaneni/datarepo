@@ -8,7 +8,7 @@ pipeline {
          stage('variables') {
             steps {
                script {
-                   echo $env.BRANCH_NAME
+                   echo $BRANCH_NAME
                  }
             }
         }
