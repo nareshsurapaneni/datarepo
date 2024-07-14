@@ -4,6 +4,15 @@ pipeline {
        tools {
         maven 'maven'    }
     stages {
+
+         stage('diff') {
+            steps {
+               script {
+                  sh ' git diff branch2'
+               }
+            }
+        }
+
         stage('Build') {
             steps {
                script {
