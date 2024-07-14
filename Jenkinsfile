@@ -8,7 +8,7 @@ pipeline {
          stage('variables') {
             steps {
                script {
-                   echo $BRANCH_NAME
+                   echo $GIT_BRANCH
                  }
             }
         }
