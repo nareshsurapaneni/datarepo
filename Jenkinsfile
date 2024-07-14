@@ -8,7 +8,7 @@ pipeline {
          stage('diff') {
             steps {
                script {
-                  sh ' git diff branch2'
+                  sh ' git diff origin/branch2'
                }
             }
         }
