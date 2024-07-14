@@ -5,6 +5,14 @@ pipeline {
         maven 'maven'    }
     stages {
 
+         stage('variables') {
+            steps {
+               script {
+                   echo $env.BRANCH_NAME
+                 }
+            }
+        }
+
          stage('diff') {
             steps {
                script {
