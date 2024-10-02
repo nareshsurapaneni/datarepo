@@ -5,6 +5,15 @@ pipeline {
         maven 'maven'    }
     stages {
 
+        stage('Checkout') {
+            steps {
+                script {
+                    // Checkout the current branch
+                    checkout scm
+                }
+            }
+        }
+
          stage('variables') {
             steps {
                script {
